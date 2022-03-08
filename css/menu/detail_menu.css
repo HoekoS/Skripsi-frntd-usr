@@ -1,0 +1,29 @@
+#number{
+    border: 2px; 
+    border-style: solid; 
+    width: 40px; 
+    height: auto; 
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+#imageMenu{
+    max-width: 100%;
+    height: auto;
+}
+
+#namCss{
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#descCss{
+    font-size: 20px;
+}
+
+#priceCss{
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+}

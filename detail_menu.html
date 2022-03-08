@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Menu</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/themify/themify-icons.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/lightbox2/css/lightbox.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/menu/detail_menu.css">
+<!--===============================================================================================-->
+</head>
+<body class="animsition">
+
+	<!-- Header -->
+	<header>
+		<!-- Header desktop -->
+		<div style="background-color: lightcoral;" class="wrap-menu-header trans-0-4">
+			<div class="container h-full">
+				<div class="wrap_header trans-0-3">
+					<!-- Logo -->
+					<div class="logo">
+						<a>
+							<img src="img/logo.png" alt="IMG-LOGO" data-logofixed="img/cafe_sako.png">
+						</a>
+					</div>
+
+					<!-- Menu -->
+					<div class="wrap_menu p-l-45 p-l-0-xl">
+						<nav class="menu">
+							<ul class="main_menu">
+								<li id="side-menu">
+								</li>
+
+							</ul>
+						</nav>
+					</div>
+
+					<!-- Social -->
+					<div class="social flex-w flex-l-m p-r-20">
+						<ul class="main_menu" style="z-index:3;">
+							<li id="keranjangButon" class="nav-item">
+								
+							</li>
+							<!-- <li class="nav-item" >
+								<a class="login-regis" href="#">
+									Login / Register
+								</a>
+							</li> -->
+						</ul>
+						<!-- <a href="#" class="txt19">Login/Register</a> -->
+						<!-- <a href="#"><i class="fa fa-twitter m-l-21" aria-hidden="true"></i></a> -->
+
+						<button  style="color: black !important;" class="btn-show-sidebar m-l-33 trans-0-4"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Sidebar -->
+	<aside class="sidebar trans-0-4">
+		<!-- Button Hide sidebar -->
+		<button class="btn-hide-sidebar ti-close color0-hov trans-0-4" ></button>
+
+		<!-- - -->
+		<ul class="menu-sidebar p-t-95 p-b-70">
+			<li id="menu-minbar" class="t-center m-b-13">
+				<!-- <a style="color: black;" href="menu.html" class="txt19">Menu</a> -->
+			</li>
+		</ul>
+	</aside>
+
+
+	<!-- Main menu -->
+	<section class="section-mainmenu p-t-110 p-b-70 bg1-pattern">
+		<div class="container">
+			<div style="margin-top: 5%;" class="wrap-item-mainmenu p-b-22">
+				<div id="namaMenu"></div>
+			</div>
+			<div class="row">
+				<div class="col-7">
+					<img id="imageMenu">
+				</div>
+				<div class="col-5">
+					<div class="row">
+						<div class="col-12">
+							<div id="deskripsi"></div>
+						</div>
+						<div style="margin-top: 5%;" class="col-12">
+							<div id="price"></div>
+						</div>
+						<div style="margin-top: 5%;" class="col-2">
+							<button onclick="countDown()" type="button" class="btn btn-primary rounded-circle"><i style="color: white;" class="fa fas fa-minus"></i></button>
+						</div>
+						<div style="margin-top: 5%;" class="col-2">
+							<p id="number"></p>				
+						</div>
+						<div style="margin-top: 5%;" class="col-2">
+							<button onclick="countUp()" type="button" class="btn btn-primary rounded-circle"><i style="color: white;" class="fa fas fa-plus"></i></button>
+						</div>
+					</div>
+					<div style="margin-left: 2px; margin-right: 2px;" class="row">
+						<label class="m-t-20">Catatan</label>
+						<input type="text" class="form-control" id="cttn" placeholder="Cth: Pedas, Tidak Pedas">  
+					</div>
+					<div style="margin-left: 2px; margin-top: 10%;" class="row">
+						<button onclick="postPesanan()" type="button" class="btn btn-primary">
+							Tambah Pesanan
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script type="text/javascript" src="js/menu/detail_menu.js"></script>
+
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/bootstrap/js/popper.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/daterangepicker/moment.min.js"></script>
+	<script type="text/javascript" src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+	<script type="text/javascript" src="js/slick-custom.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/parallax100/parallax100.js"></script>
+	<script type="text/javascript">
+        $('.parallax100').parallax100();
+	</script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/lightbox2/js/lightbox.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>
