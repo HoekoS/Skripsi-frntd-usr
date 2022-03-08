@@ -1,4 +1,4 @@
-const url = 'http://localhost:3737/api/menu';
+const url = 'http://34.101.186.227:3737/api/menu';
 let output = '';
 let output2 = '';
 var x = new URLSearchParams(window.location.search);
@@ -74,7 +74,7 @@ async function getapiLondo(data2) {
   // Storing response
   output='';
   data2.data.filter(item=>item.sub_kategori=='Menu Londo').forEach((itemData) => {
-    showPsnLondo(itemData.id,itemData.name,itemData.price,itemData.description,'http://localhost:3838/'+itemData.pic)
+    showPsnLondo(itemData.id,itemData.name,itemData.price,itemData.description,'http://34.101.186.227:3838/'+itemData.pic)
   });
   document.getElementById('row-londo').innerHTML=output;
 
@@ -110,7 +110,7 @@ async function getapisayur(data2) {
   // Storing response
   output='';
   data2.data.filter(item=>item.sub_kategori=='Aneka Sayur').forEach((itemData) => {
-    showPsnsayur(itemData.id,itemData.name,itemData.price,itemData.description,'http://localhost:3838/'+itemData.pic)
+    showPsnsayur(itemData.id,itemData.name,itemData.price,itemData.description,'http://34.101.186.227:3838/'+itemData.pic)
   });
   document.getElementById('row-sayur').innerHTML=output;
 
@@ -146,7 +146,7 @@ async function getapitelur(data2) {
   // Storing response
   output='';
   data2.data.filter(item=>item.sub_kategori=='Aneka Masakan Telur').forEach((itemData) => {
-    showPsntelur(itemData.id,itemData.name,itemData.price,itemData.description,'http://localhost:3838/'+itemData.pic)
+    showPsntelur(itemData.id,itemData.name,itemData.price,itemData.description,'http://34.101.186.227:3838/'+itemData.pic)
   });
   document.getElementById('row-telur').innerHTML=output;
 
@@ -182,7 +182,7 @@ async function getapiayam(data2) {
   // Storing response
   output='';
   data2.data.filter(item=>item.sub_kategori=='Aneka Masakan Ayam').forEach((itemData) => {
-    showPsnayam(itemData.id,itemData.name,itemData.price,itemData.description,'http://localhost:3838/'+itemData.pic)
+    showPsnayam(itemData.id,itemData.name,itemData.price,itemData.description,'http://34.101.186.227:3838/'+itemData.pic)
   });
   document.getElementById('row-ayam').innerHTML=output;
 
@@ -218,7 +218,7 @@ async function getapisoup(data2) {
   // Storing response
   output='';
   data2.data.filter(item=>item.sub_kategori=='Aneka Soup').forEach((itemData) => {
-    showPsnsoup(itemData.id,itemData.name,itemData.price,itemData.description,'http://localhost:3838/'+itemData.pic)
+    showPsnsoup(itemData.id,itemData.name,itemData.price,itemData.description,'http://34.101.186.227:3838/'+itemData.pic)
   });
   document.getElementById('row-soup').innerHTML=output;
 
@@ -254,7 +254,7 @@ async function getapiseafood(data2) {
   // Storing response
   output='';
   data2.data.filter(item=>item.sub_kategori=='Seafood').forEach((itemData) => {
-    showPsnseafood(itemData.id,itemData.name,itemData.price,itemData.description,'http://localhost:3838/'+itemData.pic)
+    showPsnseafood(itemData.id,itemData.name,itemData.price,itemData.description,'http://34.101.186.227:3838/'+itemData.pic)
   });
   document.getElementById('row-seafood').innerHTML=output;
 
@@ -290,7 +290,7 @@ async function getapiminuman(data2) {
   // Storing response
   output='';
   data2.data.filter(item=>item.kategori=='Minuman').forEach((itemData) => {
-    showPsnminuman(itemData.id,itemData.name,itemData.price,itemData.description,'http://localhost:3838/'+itemData.pic)
+    showPsnminuman(itemData.id,itemData.name,itemData.price,itemData.description,'http://34.101.186.227:3838/'+itemData.pic)
   });
   document.getElementById('row-minuman').innerHTML=output;
 

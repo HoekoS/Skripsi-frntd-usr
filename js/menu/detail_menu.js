@@ -1,8 +1,8 @@
 var x = new URLSearchParams(window.location.search);
 var id=x.get('key');
 console.log(id);
-const url = 'http://localhost:3737/api/menu';
-const url_pesanan = 'http://localhost:3737/api/order';
+const url = 'http://34.101.186.227:3737/api/menu';
+const url_pesanan = 'http://34.101.186.227:3737/api/order';
 var total=1;
 
 
@@ -26,7 +26,7 @@ fetch(url+'?key='+id)
         document.getElementById('namaMenu').innerHTML='<p  id="namCss" class="tit-mainmenu tit10 p-b-5">'+data.data[0].name+'</p>';
         document.getElementById('deskripsi').innerHTML='<p id="descCss">'+data.data[0].description+'<p>';
         document.getElementById('price').innerHTML='<p id="priceCss"> Harga : '+data.data[0].price+'</p>';
-        document.getElementById('imageMenu').src='http://localhost:3838/'+data.data[0].pic;
+        document.getElementById('imageMenu').src='http://34.101.186.227:3838/'+data.data[0].pic;
       }
     )
   }
@@ -72,7 +72,7 @@ function postPesanan(){
     if(data.status=="True"){
       console.log("data sukses");
       // alert("sukses")
-      window.location.replace('http://localhost:3737/feuser/menu_all.html?not='+nomer_nota+'&nom='+nomer_meja);
+      window.location.replace('http://34.101.186.227:3737/feuser/menu_all.html?not='+nomer_nota+'&nom='+nomer_meja);
     }else{
       console.log("data error "+data.status);
       alert("Data Error");
