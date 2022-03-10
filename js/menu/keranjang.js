@@ -10,9 +10,9 @@ document.getElementById("menu-minbar").innerHTML='<a href="menu_all.html?not='+n
 document.getElementById("no-nota").innerHTML=nomer_nota
 document.getElementById("no-meja").innerHTML=nomer_meja
 
-const url_harga="http://34.101.186.227:3737/api/order/get/harga?not="+nomer_nota
-const url_detail="http://34.101.186.227:3737/api/order/pilih?not="+nomer_nota
-const url_pesanan = 'http://34.101.186.227:3737/api/order';
+const url_harga="http://cafesako.store/api/order/get/harga?not="+nomer_nota
+const url_detail="http://cafesako.store/api/order/pilih?not="+nomer_nota
+const url_pesanan = 'http://cafesako.store/api/order';
 
 var total=[];
 var output="";
@@ -77,7 +77,7 @@ function showPsn(id,id_psn,name,price,url,desc){
           <div class="col-6 m-l-r-auto">
               <div class="blo3 flex-w flex-col-l-sm m-b-30">
                   <div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-                      <a><img src="`+'http://34.101.186.227:3838/'+url+`" alt="IMG-MENU"></a>
+                      <a><img src="`+'http://file.cafesako.store/'+url+`" alt="IMG-MENU"></a>
                   </div>
 
                   <div class="text-blo3 size21 flex-col-l-m">
@@ -228,7 +228,7 @@ async function deletePsn(ids){
       if(data.status=="True"){
         console.log("data sukses");
         // alert("sukses")
-        window.location.replace("http://34.101.186.227:3737/feuser/menu.html");
+        window.location.replace("http://cafesako.store/menu.html");
       }else{
         console.log("data error "+data.status);
         alert("Data Error");
@@ -244,7 +244,7 @@ async function deletePsn(ids){
       if(data.status=="True"){
         console.log("PESANAN DISUBMIT");
         // alert("sukses")
-        window.location.replace("http://34.101.186.227:3737/feuser/menu.html");
+        window.location.replace("http://cafesako.store/menu.html");
       }else{
         console.log("data error "+data.status);
         alert("Data Error");
